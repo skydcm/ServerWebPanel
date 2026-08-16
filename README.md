@@ -2,7 +2,14 @@
 
 **A modern, real-time web dashboard for your Paper server.** See who's online, monitor TPS & memory, and track player trends — right from your browser, on any device. No login required for visitors.
 
-![Status](https://img.shields.io/badge/Paper-1.20+-blue) ![Java](https://img.shields.io/badge/Java-17+-orange) ![Version](https://img.shields.io/badge/version-1.2.0-green)
+![Status](https://img.shields.io/badge/Paper-1.20+-blue) ![Java](https://img.shields.io/badge/Java-17+-orange) ![Version](https://img.shields.io/badge/version-1.3.0-green)
+
+---
+
+## 📥 Download
+
+**Free version:** grab `ServerWebPanel-Free.jar` from this repository (click the file, then the **Download** button).
+**Pro version:** coming soon (BuiltByBit) — remote command API, one-click themes, Discord webhooks, multi-server view.
 
 ---
 
@@ -32,6 +39,18 @@
 | Discord webhooks | ❌ | ✅ |
 | Multi-server view | ❌ | ✅ |
 | Custom branding | ❌ | ✅ |
+
+## 🖼️ Screenshots
+
+![Home - online players](screenshot-1-home.png)
+
+![One-click theme: Green](screenshot-2-theme-green.png)
+
+![English UI + Purple theme](screenshot-3-en-purple.png)
+
+![Remote command API demo](screenshot-4-api-demo.png)
+
+![Mobile view](screenshot-5-mobile.jpg)
 
 ## 📦 Requirements
 
