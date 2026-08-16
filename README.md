@@ -6,41 +6,41 @@
 
 ---
 
-## Download
+## 📥 Download
 
 **Free version:** grab `ServerWebPanel-Free.jar` from this repository (click the file, then the **Download** button).
 **Pro version:** coming soon (BuiltByBit) — remote command API, one-click themes, Discord webhooks, multi-server view.
 
 ---
 
-## Features
+## ✨ Features
 
 ### Free version
-- Public live page — server status, online players (name/ping/world), TPS, memory, uptime
-- 24-hour online trend chart (auto-sampled every 30s)
-- 7-day daily peak chart — data survives restarts & crashes (auto-saved every 5 min)
-- Chinese & English UI with auto-detection (`?lang=en` / `?lang=zh` to switch)
-- Zero config needed — drop the jar in and it works (default port 8081)
+- 🌐 **Public live page** — server status, online players (name/ping/world), TPS, memory, uptime
+- 📈 **24-hour online trend** chart (auto-sampled every 30s)
+- 📅 **7-day daily peak** chart — data survives restarts & crashes (auto-saved every 5 min)
+- 🌍 **Chinese & English** UI with auto-detection (`?lang=en` / `?lang=zh` to switch)
+- 🔒 **Zero config needed** — drop the jar in and it works (default port `8081`)
 
 ### Pro version (all Free features +)
-- Remote command API — send broadcasts, whitelist/ban players from your phone or scripts, protected by a token + command whitelist
-- One-click themes — switch the whole page theme from the browser; applies to all visitors instantly, no restart
-- Discord webhook notifications — server start/stop alerts + low-TPS warnings
-- Multi-server support — watch several servers on one page
-- Custom branding — page title, accent/background colors, footer
+- ⚡ **Remote command API** — send broadcasts, whitelist/ban players from your phone or scripts, protected by a token + command whitelist
+- 🎨 **One-click themes** — switch the whole page theme from the browser; applies to all visitors instantly, no restart
+- 🔔 **Discord webhook notifications** — server start/stop alerts + low-TPS warnings
+- 🖥️ **Multi-server support** — watch several servers on one page
+- 🏷️ **Custom branding** — page title, accent/background colors, footer
 
 | | Free | Pro |
 |---|---|---|
-| Live status page | Yes | Yes |
-| Player list (ping/world) | Yes | Yes |
-| 24h / 7d charts | Yes | Yes |
-| Remote command API | No | Yes |
-| One-click themes | No | Yes |
-| Discord webhooks | No | Yes |
-| Multi-server view | No | Yes |
-| Custom branding | No | Yes |
+| Live status page | ✅ | ✅ |
+| Player list (ping/world) | ✅ | ✅ |
+| 24h / 7d charts | ✅ | ✅ |
+| Remote command API | ❌ | ✅ |
+| One-click themes | ❌ | ✅ |
+| Discord webhooks | ❌ | ✅ |
+| Multi-server view | ❌ | ✅ |
+| Custom branding | ❌ | ✅ |
 
-## Screenshots
+## 🖼️ Screenshots
 
 ![Home - online players](screenshot-1-home.png)
 
@@ -52,13 +52,13 @@
 
 ![Mobile view](screenshot-5-mobile.jpg)
 
-## Requirements
+## 📦 Requirements
 
 - **Paper** 1.20+ (Spigot works for the core page; TPS uses the Paper API)
 - **Java 17+**
 - The web page runs **inside the server** — the panel is online whenever your server is online (like Dynmap)
 
-## Installation
+## 🚀 Installation
 
 1. Download the jar (Free or Pro)
 2. Drop it into your server's `plugins/` folder
@@ -67,7 +67,7 @@
 
 > **Port 8081** is the default because 8080 is often taken by other services. Change it in `plugins/ServerWebPanel/config.yml`.
 
-## Configuration (`plugins/ServerWebPanel/config.yml`)
+## ⚙️ Configuration (`plugins/ServerWebPanel/config.yml`)
 
 ```yaml
 port: 8081                # web page port
@@ -103,7 +103,7 @@ webhook:
 remote-servers: []         # multi-server: [{name, url}]
 ```
 
-## Commands & Permissions
+## 🔧 Commands & Permissions
 
 | Command | Description | Permission |
 |---|---|---|
@@ -111,7 +111,7 @@ remote-servers: []         # multi-server: [{name, url}]
 | `/panel token` | Regenerate the admin token | `serverwebpanel.admin` (default: op) |
 | `/panel reload` | Reload config | `serverwebpanel.admin` |
 
-## Web API (Pro)
+## 🔌 Web API (Pro)
 
 ### Public
 | Endpoint | Description |
@@ -132,14 +132,14 @@ curl "http://your-server:8081/api/command?token=YOUR_TOKEN&cmd=say%20hello&messa
 # Expected: {"ok":true,"executed":"say hello"}
 ```
 
-## FAQ
+## ❓ FAQ
 
 - **Page won't open?** Check the port isn't blocked by a firewall; for remote access open TCP 8081.
 - **Data lost after crash?** Stats auto-save every 5 minutes — at most 5 minutes lost.
 - **How to switch Free/Pro?** The two builds ship with different defaults; you can also toggle `pro:` in config (e.g. to trial Pro before buying).
 - **Is a visitor login required?** No — the status page is public by design; admin actions require the token.
 
-## Changelog
+## 📜 Changelog
 
 **v1.3.0**
 - Professional UI overhaul: player avatars, server icon, TPS health colors, live status dot, version & max-players display, chart time labels
@@ -160,6 +160,6 @@ curl "http://your-server:8081/api/command?token=YOUR_TOKEN&cmd=say%20hello&messa
 **v1.0.0**
 - First release: live status page, player list, TPS/memory, 24h & 7d charts, zh/en UI
 
-## Support
+## 📬 Support
 
 Issues, feature requests and commissions welcome. If you need a custom plugin, I build Minecraft plugins on commission — contact me via the resource page or Discord.
